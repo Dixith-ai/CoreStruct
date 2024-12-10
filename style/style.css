@@ -1,0 +1,187 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #181818; /* Dark background */
+    color: #e0e0e0; /* Light text for contrast */
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center; /* Center items vertically */
+    background: linear-gradient(135deg, #2C3E50, #34495E); /* Dark gradient */
+    color: white;
+    padding: 40px;
+    border-bottom: 5px solid #34495E;
+}
+
+header .logo {
+    width: 50px; /* Adjust the size of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between the logo and the text */
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 0;
+}
+
+/* Navigation menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    display: flex; /* Align menu items horizontally */
+}
+
+nav ul li {
+    margin-right: 20px; /* Space between menu items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase; /* Modern touch */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: #222; /* Darker background for the content */
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Adds depth */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect on the main section */
+main:hover {
+    transform: translateY(-5px); /* Makes the section float slightly */
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #E67E22; /* Accent color */
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Cards for operations or features */
+.card {
+    display: inline-block;
+    width: 250px;
+    margin: 15px;
+    padding: 25px;
+    background-color: #1ABC9C; /* Modern card color */
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Increased shadow for effect */
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+/* Buttons */
+button {
+    padding: 14px 28px;
+    background-color: #E67E22; /* Accent color for buttons */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 15px 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #D35400; /* Darker shade on hover */
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Footer */
+footer {
+    background-color: #2C3E50; /* Dark footer */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack logo and menu vertically on small screens */
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 36px;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+    }
+
+    main {
+        padding: 40px 20px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
